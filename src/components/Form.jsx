@@ -2,7 +2,7 @@ import React from "react"
 
 const Form = props => {
   return(
-    <form>
+    <form onSubmit={props.onSubmitHandler}>
       <label htmlFor="weight"></label>
       <input type="number" required placeholder="Weight in KGs" name="weight" id="weight" onChange={props.onChangleHandler}/>
 
