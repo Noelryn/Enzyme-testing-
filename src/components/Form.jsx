@@ -4,12 +4,12 @@ const Form = props => {
   return(
     <form>
       <label htmlFor="weight"></label>
-      <input type="number" required placeholder="Weight in KGs" name="weight" id="weight"/>
+      <input type="number" required placeholder="Weight in KGs" name="weight" id="weight" onChange={props.onChangleHandler}/>
 
       <label htmlFor="height"></label>
-      <input type="number" required placeholder="Height in CM" name="height" id="height"/>
+      <input type="number" required placeholder="Height in CM" name="height" id="height" onChange={props.onChangleHandler}/>
 
-      <button>Calculate BMI</button>
+      <button id='calculate'>Calculate BMI</button>
     </form>
   )
 }
